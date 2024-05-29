@@ -1,3 +1,9 @@
+/* Kök Değişkenler */
+:root {
+  --error-color: red;
+}
+
+/* Hata Rengi */
 .red {
-    color: red;
+  color: var(--error-color);
 }
