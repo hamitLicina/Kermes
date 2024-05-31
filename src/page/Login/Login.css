@@ -1,0 +1,59 @@
+/* Kök Değişkenler */
+:root {
+    --primary-color: #004866;
+    --secondary-color: #ccf0ff;
+    --font-primary: "Rubik", sans-serif;
+    --font-secondary: "Lobster", cursive;
+  }
+  
+  /* Genel Stillendirme */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+  }
+  
+  /* Login Sayfası */
+  .login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .formWrapper {
+    width: 50%;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+  }
+  
+  .image {
+    width: 50%;
+  }
+  
+  .welcomeText {
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .username {
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 60px;
+    margin-top: 3rem;
+  }
+  
+  .label {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 2rem;
+    color: black;
+  }
+  
+  .input {
+    width: 100%;
+  

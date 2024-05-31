@@ -1,20 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Button from 'react-bootstrap/Button';
+import './App.css';
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import Login from './page/Login/Login';
 
 
 
 function App() {
-
-
   return (
-    <>
-      <Button variant="success">Success</Button>{' '}
-      <Alert key='danger' variant='danger'>
-        This is a danger alert—check it out!
-      </Alert>
-    </>
-  )
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/login" component={<Login />} />
+          {/* Diğer rotalar */}
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
